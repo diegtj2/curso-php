@@ -1,5 +1,5 @@
 <?php
 $msg = "ola mundo";
 echo $msg;
-echo "Uma msg aqui!";
+echo "\n\n outra msg aqui!";
 ?>
