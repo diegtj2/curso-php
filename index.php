@@ -1,11 +1,16 @@
 <?php
-$msg = "olá mundo \n";
+
+$login = $_GET['login'];
+$senha = $_GET['pass'];
+$msg;
+
+if($senha == '123'){
+	$msg = "Bem vindo, $login!";
+}else{
+	$msg = "Senha incorreta!";
+}
+
 echo $msg;
-echo "\n outra msg aqui!";
-
-$login = $_POST['login'];
-
-echo $login;
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +26,8 @@ echo $login;
 			<br/>
 			Senha: <input type="text" name="pass"></input>
 			<br/>
-			<input type="submit" name="confirma" value="Confirma"></input>
+			<br/>
+			<input type="submit" value="Enviar"></input>
 
 		</form>
 
