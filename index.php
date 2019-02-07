@@ -1,10 +1,9 @@
 <?php
-
+$msg;
 $login = $_GET['login'];
 $senha = $_GET['pass'];
-$msg;
 
-if($senha == '123'){
+if($senha == '123' && $login != null){
 	$msg = "Bem vindo, $login!";
 }else{
 	$msg = "Senha incorreta!";
@@ -28,8 +27,6 @@ echo $msg;
 			<br/>
 			<br/>
 			<input type="submit" value="Enviar"></input>
-
 		</form>
-
 	</body>
 </html>
